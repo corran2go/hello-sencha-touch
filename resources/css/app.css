@@ -23,6 +23,14 @@
     font-size: 0.7em;
 }
 
+.x-tab .x-button-icon.infinite {
+    -webkit-mask-image: url('../../touch/resources/themes/images/default/pictos/infinite.png');
+}
+
+.x-tab .x-button-icon.twitter {
+    -webkit-mask-image: url('../../touch/resources/themes/images/default/pictos/twitter2.png');
+}
+
 .blog p {
     color: #555;
     padding: 20px 20px 0 20px;

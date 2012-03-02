@@ -4,7 +4,7 @@ Ext.define('App.view.Blog', {
 
   config: {
     title: 'Blog',
-    iconCls: 'star',
+    iconCls: 'infinite',
     displayField: 'title',
     store: 'Blogs',
 
@@ -17,7 +17,7 @@ Ext.define('App.view.Blog', {
     listeners: {
       itemtap: function(nestedList, list, index, element, post) {
         this.getDetailCard().setHtml(post.get('content'));
-        this.getDetailCard().getScrollable().getScroller().scrollTo(0,0);
+        this.getDetailCard().getScrollable().getScroller().scrollToTop();
       }
     }
   }

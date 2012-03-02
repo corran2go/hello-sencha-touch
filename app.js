@@ -6,6 +6,10 @@ Ext.application({
   views: ['Main'],
   controllers: ['Main'],
 
+  viewport: {
+    autoMaximize: true
+  },
+
   launch: function() {
     Ext.Viewport.add(Ext.create('App.view.Main'));
   }
