@@ -5,6 +5,7 @@ Ext.define('App.view.Layout', {
   config: {
     title: 'Layout Test',
     iconCls: 'organize',
+
     layout: 'hbox',
 
     items: [

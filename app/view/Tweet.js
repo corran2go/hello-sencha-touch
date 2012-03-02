@@ -9,6 +9,7 @@ Ext.define('App.view.Tweet', {
   config: {
     title: 'Tweets',
     iconCls: 'twitter',
+
     baseCls: 'my-dataview',
     itemCls: 'my-dataview-item',
     store: 'Tweets',

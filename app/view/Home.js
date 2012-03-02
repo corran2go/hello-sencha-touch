@@ -4,8 +4,9 @@ Ext.define('App.view.Home', {
 
   config: {
     title: 'Home',
-    cls: 'home',
     iconCls: 'home',
+
+    cls: 'home',
     html: [
       '<img src="http://staging.sencha.com/img/sencha.png" />',
       '<h1>Welcome to Sencha Touch</h1>',

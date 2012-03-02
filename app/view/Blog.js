@@ -5,8 +5,9 @@ Ext.define('App.view.Blog', {
   config: {
     title: 'Blog',
     iconCls: 'infinite',
-    displayField: 'title',
+
     store: 'Blogs',
+    displayField: 'title',
 
     detailCard: {
       xtype: 'panel',
@@ -15,9 +16,10 @@ Ext.define('App.view.Blog', {
     },
 
     listeners: {
-      itemtap: function(nestedList, list, index, element, post) {
-        this.getDetailCard().setHtml(post.get('content'));
-        this.getDetailCard().getScrollable().getScroller().scrollToTop();
+      leafitemtap: function(nestedList, list, index, target, record) {
+        var detailCard = nestedList.getDetailCard();
+        detailCard.setHtml(record.get('content'));
+        detailCard.getScrollable().getScroller().scrollToTop();
       }
     }
   }
