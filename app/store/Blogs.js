@@ -3,6 +3,7 @@ Ext.define('App.store.Blogs', {
 
   config: {
     model: 'App.model.Blog',
+    autoLoad: true,
     root: {
       leaf: false
     }

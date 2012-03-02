@@ -8,11 +8,19 @@ Ext.define('App.view.Main', {
     'App.view.Tweet',
     'App.view.Contact',
     'App.view.Layout',
-    'App.view.Carousel'
+    'App.view.Carousel',
+    'App.view.List'
   ],
 
   config: {
     tabBarPosition: 'bottom',
+
+    layout: {
+      type: 'card',
+      animation: {
+        type: 'slide'
+      }
+    },
 
     items: [
       { xtype: 'homeview' },
@@ -20,7 +28,8 @@ Ext.define('App.view.Main', {
       { xtype: 'tweetview' },
       { xtype: 'contactview' },
       { xtype: 'layoutview' },
-      { xtype: 'carouselview' }
+      { xtype: 'carouselview' },
+      { xtype: 'listview' }
     ]
   },
 });
