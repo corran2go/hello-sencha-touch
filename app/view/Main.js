@@ -9,7 +9,8 @@ Ext.define('App.view.Main', {
     'App.view.Contact',
     'App.view.Layout',
     'App.view.Carousel',
-    'App.view.List'
+    'App.view.List',
+    'App.view.Navigation'
   ],
 
   config: {
@@ -29,7 +30,8 @@ Ext.define('App.view.Main', {
       { xtype: 'contactview' },
       { xtype: 'layoutview' },
       { xtype: 'carouselview' },
-      { xtype: 'listview' }
+      { xtype: 'listview' },
+      { xtype: 'mynavigationview' }
     ]
   },
 });

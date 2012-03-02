@@ -18,6 +18,12 @@ Ext.define('App.view.List', {
 
     itemTpl: 'User: {name}',
 
+    items: {
+      xtype: 'titlebar',
+      title: 'List Test',
+      docked: 'top'
+    },
+
     listeners: {
       select: function(view, record) {
         Ext.Msg.alert('Selected!', 'You selected ' + record.get('name'));

@@ -16,12 +16,10 @@ Ext.define('App.view.Tweet', {
     useComponents: true,
     defaultType: 'tweetitemview',
 
-    items: [
-      {
-        xtype: 'titlebar',
-        title: 'Tweets',
-        docked: 'top'
-      }
-    ]
+    items: {
+      xtype: 'titlebar',
+      title: 'Tweets',
+      docked: 'top'
+    }
   }
 });
