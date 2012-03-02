@@ -7,7 +7,8 @@ Ext.define('App.view.Main', {
     'App.view.Blog',
     'App.view.Tweet',
     'App.view.Contact',
-    'App.view.Layout'
+    'App.view.Layout',
+    'App.view.Carousel'
   ],
 
   config: {
@@ -18,7 +19,8 @@ Ext.define('App.view.Main', {
       { xtype: 'blogview' },
       { xtype: 'tweetview' },
       { xtype: 'contactview' },
-      { xtype: 'layoutview' }
+      { xtype: 'layoutview' },
+      { xtype: 'carouselview' }
     ]
   },
 });
