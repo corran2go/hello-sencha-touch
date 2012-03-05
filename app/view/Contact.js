@@ -46,10 +46,7 @@ Ext.define('App.view.Contact', {
       {
         xtype: 'button',
         text: 'Send',
-        ui: 'confirm',
-        handler: function() {
-          this.up('formpanel').submit();
-        }
+        ui: 'confirm'
       }
     ]
   }

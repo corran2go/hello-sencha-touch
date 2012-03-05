@@ -1,4 +1,4 @@
-Ext.define('App.view.Main', {
+Ext.define('App.view.Viewport', {
   extend: 'Ext.tab.Panel',
 
   requires: [

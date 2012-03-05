@@ -22,12 +22,6 @@ Ext.define('App.view.List', {
       xtype: 'titlebar',
       title: 'List Test',
       docked: 'top'
-    },
-
-    listeners: {
-      select: function(view, record) {
-        Ext.Msg.alert('Selected!', 'You selected ' + record.get('name'));
-      }
     }
   }
 });

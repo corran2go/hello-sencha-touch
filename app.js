@@ -1,16 +1,17 @@
 Ext.application({
   name: 'App',
+  icon: 'resources/img/icon.jpg',
+  tabletStartupScreen: 'resources/img/tablet_startup_portrait.png',
 
-  models: ['Blog', 'Tweet'],
+  controllers: ['Blog', 'Contact', 'List', 'Navigation'],
   stores: ['Blogs', 'Tweets'],
-  views: ['Main'],
-  controllers: ['Main'],
+  views: ['Viewport'],
 
   viewport: {
     autoMaximize: true
   },
 
   launch: function() {
-    Ext.Viewport.add(Ext.create('App.view.Main'));
+    Ext.Viewport.add(Ext.create('App.view.Viewport'));
   }
 });

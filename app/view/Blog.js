@@ -13,14 +13,6 @@ Ext.define('App.view.Blog', {
       xtype: 'panel',
       scrollable: true,
       styleHtmlContent: true
-    },
-
-    listeners: {
-      leafitemtap: function(nestedList, list, index, target, record) {
-        var detailCard = nestedList.getDetailCard();
-        detailCard.setHtml(record.get('content'));
-        detailCard.getScrollable().getScroller().scrollToTop();
-      }
     }
   }
 });
