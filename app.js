@@ -5,13 +5,13 @@ Ext.application({
 
   controllers: ['Blog', 'Contact', 'List', 'Navigation'],
   stores: ['Blogs', 'Tweets'],
-  views: ['Viewport'],
+  views: ['Main'],
 
   viewport: {
     autoMaximize: true
   },
 
   launch: function() {
-    Ext.Viewport.add(Ext.create('App.view.Viewport'));
+    Ext.Viewport.add(Ext.create('App.view.Main'));
   }
 });

@@ -1,5 +1,6 @@
-Ext.define('App.view.Viewport', {
+Ext.define('App.view.Main', {
   extend: 'Ext.tab.Panel',
+  id: 'mainview',
 
   requires: [
     'Ext.TitleBar',
