@@ -46,7 +46,8 @@ Ext.define('App.view.Contact', {
       {
         xtype: 'button',
         text: 'Send',
-        ui: 'confirm'
+        ui: 'confirm',
+        action: 'send'
       }
     ]
   }

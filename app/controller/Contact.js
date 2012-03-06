@@ -7,13 +7,20 @@ Ext.define('App.controller.Contact', {
     },
 
     control: {
-      'formpanel button': {
+      'formpanel button[action=send]': {
         tap: 'submitForm'
+      },
+      'formpanel': {
+        submit: 'formSubmitted'
       }
     }
   },
 
   submitForm: function() {
     this.getContactForm().submit();
+  },
+
+  formSubmitted: function(form, result, event) {
+    Ext.Msg.alert('Success', 'The form data has been submitted.');
   }
 });
