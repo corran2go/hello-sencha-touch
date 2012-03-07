@@ -7,9 +7,14 @@ Ext.define('App.controller.Base', {
     },
 
     routes: {
+      'home': 'showHome',
       'tweets': 'showTweets',
       'contact': 'showContact'
     }
+  },
+
+  showHome: function() {
+    this.getMainview().setActiveItem(0);
   },
 
   showTweets: function() {

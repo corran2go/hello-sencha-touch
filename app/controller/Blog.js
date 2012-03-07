@@ -8,7 +8,7 @@ Ext.define('App.controller.Blog', {
 
     control: {
       'blogview': {
-        leafitemtap: 'updateDetailPanel'
+        leafitemtap: 'updateDetailCard'
       }
     },
 
@@ -22,7 +22,7 @@ Ext.define('App.controller.Blog', {
     }
   },
 
-  updateDetailPanel: function(nestedList, list, index, target, record) {
+  updateDetailCard: function(nestedList, list, index, target, record) {
     var detailCard = nestedList.getDetailCard();
     detailCard.setHtml(record.get('content'));
     detailCard.getScrollable().getScroller().scrollToTop();
@@ -47,7 +47,7 @@ Ext.define('App.controller.Blog', {
     this.showBlog();
     var record = this.getNestedList().getStore().getAt(index - 1);
     if (record) {
-      this.updateDetailPanel(this.getNestedList(), null, null, null, record);
+      this.updateDetailCard(this.getNestedList(), null, null, null, record);
       this.getNestedList().goToLeaf(record);
     }
   }
