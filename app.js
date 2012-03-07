@@ -1,6 +1,6 @@
 Ext.application({
   name: 'App',
-  icon: 'resources/img/icon.jpg',
+  icon: 'resources/img/logo.png',
   tabletStartupScreen: 'resources/img/tablet_startup_portrait.png',
 
   controllers: ['Blog', 'Contact', 'List', 'Navigation'],

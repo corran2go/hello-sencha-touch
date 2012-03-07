@@ -1,3 +1,9 @@
+.loading-image {
+  position: absolute;
+  left: 120px;
+  top: 120px;
+}
+
 .home {
     text-align: center;
 }
