@@ -5,6 +5,7 @@ Ext.define('App.view.Home', {
   config: {
     title: 'Home',
     iconCls: 'home',
+    historyToken: 'home',
 
     cls: 'home',
     html: [

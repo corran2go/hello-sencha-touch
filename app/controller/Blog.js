@@ -7,7 +7,7 @@ Ext.define('App.controller.Blog', {
     },
 
     control: {
-      'blogview': {
+      nestedList: {
         leafitemtap: 'updateDetailCard'
       }
     },

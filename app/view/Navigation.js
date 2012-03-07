@@ -5,6 +5,7 @@ Ext.define('App.view.Navigation', {
   config: {
     title: 'Navigation Test',
     iconCls: 'locate',
+    historyToken: 'navigation',
 
     items: {
       title: 'Navigation Test',

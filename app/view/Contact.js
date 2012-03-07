@@ -10,6 +10,7 @@ Ext.define('App.view.Contact', {
   config: {
     title: 'Contact',
     iconCls: 'user',
+    historyToken: 'contact',
 
     url: 'static.json',
     layout: 'vbox',

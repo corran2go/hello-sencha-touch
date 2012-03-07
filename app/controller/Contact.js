@@ -10,7 +10,7 @@ Ext.define('App.controller.Contact', {
       'formpanel button[action=send]': {
         tap: 'submitForm'
       },
-      'formpanel': {
+      contactForm: {
         submit: 'formSubmitted'
       }
     }

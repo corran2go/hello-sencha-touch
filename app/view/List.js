@@ -5,6 +5,7 @@ Ext.define('App.view.List', {
   config: {
     title: 'List Test',
     iconCls: 'trash',
+    historyToken: 'list',
 
     store: {
       fields: ['name'],

@@ -5,6 +5,7 @@ Ext.define('App.view.Blog', {
   config: {
     title: 'Blog',
     iconCls: 'infinite',
+    historyToken: 'blog',
 
     store: 'Blogs',
     displayField: 'title',

@@ -6,11 +6,35 @@ Ext.define('App.controller.Base', {
       mainview: '#mainview'
     },
 
+    control: {
+      mainview: {
+        activeitemchange: 'addTabHistory'
+      }
+    },
+
     routes: {
       'home': 'showHome',
       'tweets': 'showTweets',
-      'contact': 'showContact'
+      'contact': 'showContact',
+      'layout': 'showLayout',
+      'carousel': 'showCarousel',
+      'list': 'showList',
+      'navigation': 'showNavigation'
     }
+  },
+
+  launch: function() {
+    var history = this.getApplication().getHistory();
+    history.add(new Ext.app.Action({
+      url: 'home'
+    }), true);
+  },
+
+  addTabHistory: function(mainview, newView) {
+    var history = this.getApplication().getHistory();
+    history.add(new Ext.app.Action({
+      url: newView.getHistoryToken()
+    }), true);
   },
 
   showHome: function() {
@@ -23,5 +47,21 @@ Ext.define('App.controller.Base', {
 
   showContact: function() {
     this.getMainview().setActiveItem(3);
+  },
+
+  showLayout: function() {
+    this.getMainview().setActiveItem(4);
+  },
+
+  showCarousel: function() {
+    this.getMainview().setActiveItem(5);
+  },
+
+  showList: function() {
+    this.getMainview().setActiveItem(6);
+  },
+
+  showNavigation: function() {
+    this.getMainview().setActiveItem(7);
   }
 });

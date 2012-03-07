@@ -5,6 +5,7 @@ Ext.define('App.view.Carousel', {
   config: {
     title: 'Carousel Test',
     iconCls: 'refresh',
+    historyToken: 'carousel',
 
     defaults: {
       styleHtmlContent: true
