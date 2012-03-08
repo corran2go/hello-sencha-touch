@@ -15,11 +15,10 @@ Ext.define('App.view.Main', {
   ],
 
   config: {
+    tabBarPosition: 'bottom',
     tabBar: {
       scrollable: 'horizontal'
     },
-
-    tabBarPosition: 'bottom',
 
     layout: {
       type: 'card',
