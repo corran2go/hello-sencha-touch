@@ -23,18 +23,13 @@ Ext.define('App.controller.Base', {
     }
   },
 
-  launch: function() {
-    var history = this.getApplication().getHistory();
-    history.add(new Ext.app.Action({
-      url: 'home'
-    }), true);
-  },
-
   addTabHistory: function(mainview, newView) {
     var history = this.getApplication().getHistory();
-    history.add(new Ext.app.Action({
-      url: newView.getHistoryToken()
-    }), true);
+    if (history.getToken().split('/')[0] !== newView.getHistoryToken()) {
+      history.add(new Ext.app.Action({
+        url: newView.getHistoryToken()
+      }), true);
+    }
   },
 
   showHome: function() {

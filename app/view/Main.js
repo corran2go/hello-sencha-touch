@@ -15,6 +15,10 @@ Ext.define('App.view.Main', {
   ],
 
   config: {
+    tabBar: {
+      scrollable: 'horizontal'
+    },
+
     tabBarPosition: 'bottom',
 
     layout: {
