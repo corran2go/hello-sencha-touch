@@ -8,6 +8,7 @@ Ext.define('App.view.Home', {
     historyToken: 'home',
 
     cls: 'home',
+    scrollable: true,
     html: [
       '<img src="http://staging.sencha.com/img/sencha.png" />',
       '<h1>Welcome to Sencha Touch</h1>',
