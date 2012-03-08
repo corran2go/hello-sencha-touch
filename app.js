@@ -12,6 +12,7 @@ Ext.application({
   },
 
   launch: function() {
+    Ext.get('loading-image').destroy();
     Ext.Viewport.add(Ext.create('App.view.Main'));
   }
 });
