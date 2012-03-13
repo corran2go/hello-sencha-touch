@@ -1,0 +1,126 @@
+{
+    "projectName": "Project Name",
+    "licenseText": "Copyright(c) 2011 Company Name",
+    "builds": [
+        {
+            "name": "All Classes",
+            "target": "all-classes.js",
+            "options": {
+                "debug": true
+            },
+            "files": [
+                {
+                    "path": "app/controller/",
+                    "name": "Contact.js",
+                    "clsName": "App.controller.Contact"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "List.js",
+                    "clsName": "App.controller.List"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "Navigation.js",
+                    "clsName": "App.controller.Navigation"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Home.js",
+                    "clsName": "App.view.Home"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Blog.js",
+                    "clsName": "App.view.Blog"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Contact.js",
+                    "clsName": "App.view.Contact"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Layout.js",
+                    "clsName": "App.view.Layout"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Carousel.js",
+                    "clsName": "App.view.Carousel"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "List.js",
+                    "clsName": "App.view.List"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Navigation.js",
+                    "clsName": "App.view.Navigation"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "Base.js",
+                    "clsName": "App.controller.Base"
+                },
+                {
+                    "path": "app/model/",
+                    "name": "Blog.js",
+                    "clsName": "App.model.Blog"
+                },
+                {
+                    "path": "app/model/",
+                    "name": "Tweet.js",
+                    "clsName": "App.model.Tweet"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "TweetItem.js",
+                    "clsName": "App.view.TweetItem"
+                },
+                {
+                    "path": "app/controller/",
+                    "name": "Blog.js",
+                    "clsName": "App.controller.Blog"
+                },
+                {
+                    "path": "app/store/",
+                    "name": "Blogs.js",
+                    "clsName": "App.store.Blogs"
+                },
+                {
+                    "path": "app/store/",
+                    "name": "Tweets.js",
+                    "clsName": "App.store.Tweets"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Tweet.js",
+                    "clsName": "App.view.Tweet"
+                },
+                {
+                    "path": "app/view/",
+                    "name": "Main.js",
+                    "clsName": "App.view.Main"
+                }
+            ]
+        },
+        {
+            "name": "Application - Production",
+            "target": "app-all.js",
+            "compress": true,
+            "files": [
+                {
+                    "path": "",
+                    "name": "all-classes.js"
+                },
+                {
+                    "path": "",
+                    "name": "app.js"
+                }
+            ]
+        }
+    ],
+    "resources": []
+}
